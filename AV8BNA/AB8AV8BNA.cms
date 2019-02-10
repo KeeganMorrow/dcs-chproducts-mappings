@@ -1,0 +1,35 @@
+script
+
+// Ministick send keys near end of travel
+//  cms.b1 = [ js1.a2 < 16 ];
+//  cms.b2 = [ js1.a1 > 250 ];
+//  cms.b3 = [ js1.a2 > 250 ];
+ // cms.b4 = [ js1.a1 < 16 ];
+
+if ( JS1.B14 ) THEN
+  CMS.A1 = CMS.A1 + 5;
+endif
+
+if ( JS1.B16 ) THEN
+  CMS.A1 = CMS.A1 - 5;
+endif
+
+//if ([JS1.A2 > (128+20)]) THEN
+  //CMS.A1 = CMS.A1 + JS1.A2/5;
+  //CMS.A1 = CMS.A1 + q;
+  //CMS.A1 = 255;
+//endif
+//if ([JS1.A2 < (128-20)]) THEN
+  //CMS.A1 = CMS.A1 + JS1.A2/5;
+  //CMS.A1 = CMS.A1 + (JS1.A2-128)/32;
+  //CMS.A1 = 5;
+//endif
+if ([CMS.A1 > 255]) THEN
+  CMS.A1 = 255;
+endif
+
+if ([CMS.A1 < 0]) THEN
+  CMS.A1 = 0;
+endif
+
+endScript

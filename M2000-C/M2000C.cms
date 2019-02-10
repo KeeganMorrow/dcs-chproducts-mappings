@@ -1,0 +1,9 @@
+script
+
+// Ministick send keys near end of travel
+//  cms.b1 = [ js1.a2 < 16 ];
+//  cms.b2 = [ js1.a1 > 250 ];
+//  cms.b3 = [ js1.a2 > 250 ];
+ // cms.b4 = [ js1.a1 < 16 ];
+
+endScript
