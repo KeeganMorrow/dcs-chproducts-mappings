@@ -1,0 +1,5 @@
+* text=auto
+
+*.cms text eol=crlf
+*.map text eol=crlf
+
